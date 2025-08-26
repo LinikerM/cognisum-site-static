@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+  <rect width="100%" height="100%" fill="#fff"></rect>
+  <text x="40" y="90" font-family="Segoe UI, Roboto, Arial" font-size="48" fill="#174A7E">Mapa Territorial — Camadas</text>
+  <rect x="40" y="120" width="1200" height="520" rx="12" fill="#F6F8FB" stroke="#E6E8EC"></rect>
+  <circle cx="300" cy="380" r="140" fill="#D3EFF2"></circle>
+  <circle cx="480" cy="420" r="110" fill="#A5E1E7"></circle>
+  <circle cx="670" cy="360" r="150" fill="#78D3DB"></circle>
+  <circle cx="900" cy="400" r="130" fill="#39B4BE"></circle>
+</svg>

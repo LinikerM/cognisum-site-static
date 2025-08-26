@@ -1,0 +1,176 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato — Cognisum</title>
+  <link rel="icon" href="../../public/favicon.svg" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand" aria-label="Página inicial da Cognisum">
+        <img src="../assets/logos/logo-cognisum-lateral-cortada.png" alt="Cognisum" />
+      </a>
+      <nav>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="cases.html">Cases</a>
+        <a href="blog.html">Blog</a>
+        <a class="btn btn-primary" href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container" style="padding:32px 0">
+    <h1>Contato</h1>
+
+    <!-- usa estilos de cards/grids já existentes (.section-cards / .section-card) -->
+    <section class="section-cards" aria-label="Formulário e informações de contato">
+      <!-- Formulário -->
+      <div class="section-card">
+        <h2 style="margin-top:0">Fale com a gente</h2>
+        <form id="contact-form" novalidate style="display:grid;gap:12px;max-width:560px">
+          <!-- honeypot antispam -->
+          <input type="text" name="_hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+          <label for="name">Nome
+            <input id="name" name="name" autocomplete="name" required
+                   style="width:100%;padding:10px;border:1px solid var(--neutral-200);border-radius:12px" />
+          </label>
+
+          <label for="email">E-mail
+            <input id="email" name="email" type="email" autocomplete="email" required
+                   style="width:100%;padding:10px;border:1px solid var(--neutral-200);border-radius:12px" />
+          </label>
+
+          <label for="message">Mensagem
+            <textarea id="message" name="message" rows="5" required
+                      style="width:100%;padding:10px;border:1px solid var(--neutral-200);border-radius:12px"></textarea>
+          </label>
+
+          <div style="display:flex;gap:12px;align-items:center">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <small id="form-status" role="status" aria-live="polite" class="footer-muted"></small>
+          </div>
+        </form>
+      </div>
+
+      <!-- Informações -->
+      <aside class="section-card">
+        <h2 style="margin-top:0">Informações</h2>
+        <ul class="icon-list">
+          <li><span class="icon"></span> <a href="mailto:atendimento@cognisum.io">atendimento@cognisum.io</a></li>
+          <li><span class="icon"></span> <a href="tel:+5516999999999">(16) 9 9999 9999</a></li>
+          <li><span class="icon"></span> <a target="_blank" rel="noopener"
+             href="https://maps.google.com/?q=R.+Conde+do+Pinhal,+1762,+S%C3%A3o+Carlos+-+SP">
+             R. Conde do Pinhal, 1762 – Núcleo Res. Sílvio Vilari, São Carlos – SP</a></li>
+        </ul>
+
+        <h3 style="margin-top:16px">Atendimento</h3>
+        <p class="footer-muted" style="margin:0">Seg–Sex, 9h–18h (BRT)</p>
+      </aside>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <!-- Marca -->
+        <div class="footer-brand">
+          <img src="../assets/logos/logo-cognisum.svg" alt="Cognisum" />
+          <p class="footer-muted">
+            Dados que viram decisão. Inteligência territorial e econômica para gestão pública e institucional.
+          </p>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v1.2l10 5.8 10-5.8V6a2 2 0 0 0-2-2Zm0 5.1-8.7 5.1a1 1 0 0 1-1 0L4 9.1V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2Z"/></svg>
+              <a href="mailto:atendimento@cognisum.io">atendimento@cognisum.io</a>
+            </li>
+            <li class="footer-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.3 11.3 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 8a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.3 11.3 0 0 0 .6 3.6 1 1 0 0 1-.25 1Z"/></svg>
+              <a href="tel:+5516999999999">(16) 9 9999 9999</a>
+            </li>
+            <li class="footer-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
+              <a href="https://maps.google.com/?q=R.+Conde+do+Pinhal,+1762,+S%C3%A3o+Carlos+-+SP" target="_blank" rel="noopener">
+                R. Conde do Pinhal, 1762 – Núcleo Res. Sílvio Vilari, São Carlos – SP, 13560-648
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col" aria-label="Links úteis">
+          <h4>Links</h4>
+          <ul class="footer-list">
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="termos.html">Termos</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-col">
+          <h4>Conecte-se</h4>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.8 2.6 4.8 6V23h-4v-6.5c0-1.6 0-3.7-2.3-3.7s-2.7 1.7-2.7 3.6V23h-4V8.5z"/></svg>
+              <a href="#" aria-label="LinkedIn da Cognisum">LinkedIn</a>
+            </li>
+            <li class="footer-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1C4.5 20.5 12 20.5 12 20.5s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1 31.5 31.5 0 0 0 .5-5.8 31.5 31.5 0 0 0-.5-5.8ZM9.8 15.5V8.5l6 3.5-6 3.5Z"/></svg>
+              <a href="#" aria-label="YouTube da Cognisum">YouTube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© Cognisum</span>
+      <span class="footer-muted">CNPJ 00.000.000/0001-00 (exemplo)</span>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script type="module" src="../js/main.js"></script>
+  <script>
+    // feedback simples no front (sem backend)
+    const form = document.getElementById('contact-form');
+    const statusEl = document.getElementById('form-status');
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const hp = form.querySelector('[name="_hp"]')?.value;
+      if (hp) return; // bot passa reto
+      const valid = form.checkValidity();
+      if (!valid) {
+        statusEl.textContent = "Confira os campos obrigatórios.";
+        form.querySelectorAll('input, textarea').forEach(el => {
+          el.setAttribute('aria-invalid', el.checkValidity() ? 'false' : 'true');
+        });
+        return;
+      }
+      statusEl.textContent = "Mensagem enviada! (exemplo) — conecte a um backend/form service para receber.";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
